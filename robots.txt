@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://francontre.github.io/la-fontanella/sitemap.xml

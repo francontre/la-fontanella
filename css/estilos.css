@@ -228,7 +228,7 @@ img {
     font-weight: 600;
     box-shadow: var(--sombra-hover);
     z-index: 999;
-    display: none;
+    display: flex;
 }
 
 /* ============================================
@@ -340,11 +340,13 @@ img {
 }
 
 .plato-info .precio {
-    display: block;
-    font-size: 1.1rem;
-    color: var(--color-primario);
+    color: #C73E1D !important;
+    font-size: 1.3rem !important;
     font-weight: 700;
-    margin-bottom: 10px;
+    float: right;
+    background: #fff5f5;
+    padding: 2px 8px;
+    border-radius: 4px;
 }
 
 .plato-info p {
@@ -1154,4 +1156,17 @@ footer {
     .galeria-grid {
         grid-template-columns: 1fr 1fr;
     }
+}
+
+img[src*="imagenes"] {
+    background: linear-gradient(45deg, #f0f0f0, #e0e0e0);
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #999;
+    font-size: 0.9rem;
+}
+img[src*="imagenes"]::after {
+    content: "Foto próximamente";
 }
