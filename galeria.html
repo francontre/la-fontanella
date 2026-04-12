@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería | La Fontanella - Onda</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">La Fontanella</a>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="carta.html">Nuestra Carta</a></li>
+                <li><a href="galeria.html" class="active">Galería</a></li>
+                <li><a href="nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <h1>Galería</h1>
+            <p>El sabor se ve, se siente, se comparte</p>
+        </div>
+    </header>
+
+    <main class="galeria-page">
+        <div class="container">
+            
+            <div class="galeria-filtros">
+                <button class="filtro-btn active" onclick="filtrar('todos')">Todos</button>
+                <button class="filtro-btn" onclick="filtrar('horno')">El Horno</button>
+                <button class="filtro-btn" onclick="filtrar('platos')">Nuestros Platos</button>
+                <button class="filtro-btn" onclick="filtrar('local')">El Local</button>
+            </div>
+
+            <div class="galeria-grid" id="galeriaGrid">
+                <div class="galeria-item" data-categoria="horno">
+                    <img src="imagenes/horno-fuego.jpg" alt="Horno de leña con fuego">
+                    <div class="galeria-overlay">
+                        <span>Nuestro horno de leña</span>
+                    </div>
+                </div>
+                <div class="galeria-item" data-categoria="platos">
+                    <img src="imagenes/pizza-fontanella.jpg" alt="Pizza Fontanella">
+                    <div class="galeria-overlay">
+                        <span>Pizza Fontanella</span>
+                    </div>
+                </div>
+                <div class="galeria-item" data-categoria="platos">
+                    <img src="imagenes/carpaccio.jpg" alt="Carpaccio">
+                    <div class="galeria-overlay">
+                        <span>Carpaccio de Angus</span>
+                    </div>
+                </div>
+                <div class="galeria-item" data-categoria="local">
+                    <img src="imagenes/interior.jpg" alt="Interior del restaurante">
+                    <div class="galeria-overlay">
+                        <span>Nuestro comedor</span>
+                    </div>
+                </div>
+                <div class="galeria-item" data-categoria="platos">
+                    <img src="imagenes/tataki.jpg" alt="Tataki de atún">
+                    <div class="galeria-overlay">
+                        <span>Tataki de Atún</span>
+                    </div>
+                </div>
+                <div class="galeria-item" data-categoria="platos">
+                    <img src="imagenes/fiocchi.jpg" alt="Fiocchi">
+                    <div class="galeria-overlay">
+                        <span>Fiocchi de queso y pera</span>
+                    </div>
+                </div>
+                <div class="galeria-item" data-categoria="local">
+                    <img src="imagenes/equipo.jpg" alt="Equipo de La Fontanella">
+                    <div class="galeria-overlay">
+                        <span>Nuestro equipo</span>
+                    </div>
+                </div>
+                <div class="galeria-item" data-categoria="platos">
+                    <img src="imagenes/ensalada-burratina.jpg" alt="Ensalada">
+                    <div class="galeria-overlay">
+                        <span>Ensalada de Burratina</span>
+                    </div>
+                </div>
+                <!-- Añade más fotos según las tengas -->
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox" onclick="cerrarLightbox()">
+        <span class="lightbox-cerrar">&times;</span>
+        <img id="lightbox-img" src="" alt="">
+        <span id="lightbox-caption"></span>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>La Fontanella</h3>
+                    <p>📍 [Tu dirección], Onda, Castellón</p>
+                    <p>📞 <a href="tel:+34600123456">+34 600 123 456</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 La Fontanella</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="tel:+34600123456" class="btn-flotante">📞 Llamar</a>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

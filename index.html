@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Fontanella | Pizzería Artesanal en Onda (Castellón)</title>
+    <meta name="description" content="Auténtica pizza al horno de leña en Onda. Pasta fresca, entrantes caseros y delivery local. Reserva online o llámanos.">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navegación -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">La Fontanella</a>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="active">Inicio</a></li>
+                <li><a href="carta.html">Nuestra Carta</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>La Fontanella</h1>
+            <p class="hero-subtitle">Pizzería artesanal al horno de leña en Onda</p>
+            <div class="hero-buttons">
+                <a href="carta.html" class="btn btn-primary">Ver Carta</a>
+                <a href="tel:+34600123456" class="btn btn-secondary">Llamar Ahora</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Pilares -->
+    <section class="pilares">
+        <div class="container">
+            <div class="pilares-grid">
+                <div class="pilar">
+                    <div class="pilar-icon">🍞</div>
+                    <h3>Masa Fermentada 48h</h3>
+                    <p>Preparada diariamente con tiempo de reposo lento para un sabor único</p>
+                </div>
+                <div class="pilar">
+                    <div class="pilar-icon">🔥</div>
+                    <h3>Horno de Leña Tradicional</h3>
+                    <p>Cocción a 400°C que garantiza el auténtico sabor napolitano</p>
+                </div>
+                <div class="pilar">
+                    <div class="pilar-icon">📍</div>
+                    <h3>En el Corazón de Onda</h3>
+                    <p>Servimos a Onda y alrededores desde 2015</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Platos Estrella -->
+    <section class="destacados">
+        <div class="container">
+            <h2 class="section-title">Nuestros Favoritos</h2>
+            <div class="platos-grid">
+                <div class="plato-card">
+                    <img src="imagenes/carpaccio.jpg" alt="Carpaccio de Angus">
+                    <div class="plato-info">
+                        <h4>Carpaccio de Angus y Anchoa</h4>
+                        <span class="precio">15,50€</span>
+                        <p>Solomillo, Grana Padano, champiñones, lomo anchoa</p>
+                    </div>
+                </div>
+                <div class="plato-card">
+                    <img src="imagenes/tataki.jpg" alt="Tataki de Atún">
+                    <div class="plato-info">
+                        <h4>Tataki de Atún</h4>
+                        <span class="precio">17€</span>
+                        <p>Atún laminado, salsa soja, sésamo, wasabi</p>
+                    </div>
+                </div>
+                <div class="plato-card">
+                    <img src="imagenes/pizza-fontanella.jpg" alt="Pizza Fontanella">
+                    <div class="plato-info">
+                        <h4>Pizza Fontanella</h4>
+                        <span class="precio">12,50€</span>
+                        <p>Tomate, mozzarella, jamón, champiñón, huevo, olivas</p>
+                        <span class="badge badge-popular">Más Vendida</span>
+                    </div>
+                </div>
+                <div class="plato-card">
+                    <img src="imagenes/pizza-diavolo.jpg" alt="Pizza Diávolo">
+                    <div class="plato-info">
+                        <h4>Pizza Diávolo</h4>
+                        <span class="precio">12€</span>
+                        <p>Tomate, mozzarella, chorizo picante, orégano</p>
+                        <span class="badge badge-picante">Picante</span>
+                    </div>
+                </div>
+                <div class="plato-card">
+                    <img src="imagenes/fiocchi.jpg" alt="Fiocchi de queso y pera">
+                    <div class="plato-info">
+                        <h4>Fiocchi de Queso y Pera</h4>
+                        <span class="precio">13€</span>
+                        <p>Pasta rellena artesanal con salsa a elegir</p>
+                    </div>
+                </div>
+                <div class="plato-card">
+                    <img src="imagenes/burratina.jpg" alt="Ensalada de Burratina">
+                    <div class="plato-info">
+                        <h4>Ensalada de Burratina</h4>
+                        <span class="precio">13€</span>
+                        <p>Burrata, cherrys, aceitunas, aceite de albahaca</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <a href="carta.html" class="btn btn-primary">Ver Carta Completa</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section class="testimonios">
+        <div class="container">
+            <h2 class="section-title">Lo Que Dicen Nuestros Clientes</h2>
+            <div class="testimonios-grid">
+                <div class="testimonio">
+                    <p>"La mejor pizza de Onda, la masa es increíble. El horno de leña se nota."</p>
+                    <span>- María G.</span>
+                </div>
+                <div class="testimonio">
+                    <p>"El carpaccio es espectacular, volveremos seguro. Servicio excelente."</p>
+                    <span>- Carlos R.</span>
+                </div>
+                <div class="testimonio">
+                    <p>"Por fin un sitio con auténtico horno de leña en la zona. Totalmente recomendable."</p>
+                    <span>- Ana T.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>La Fontanella</h3>
+                    <p>📍 [Tu dirección completa], Onda, Castellón</p>
+                    <p>📞 <a href="tel:+34600123456">+34 600 123 456</a></p>
+                    <p>🕐 Martes a Domingo: 13:00-16:00 | 20:00-23:00</p>
+                    <p>Lunes cerrado</p>
+                </div>
+                <div class="footer-social">
+                    <a href="#" target="_blank">Instagram</a>
+                    <a href="#" target="_blank">Facebook</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 La Fontanella. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botón flotante móvil -->
+    <a href="tel:+34600123456" class="btn-flotante">📞 Llamar</a>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
