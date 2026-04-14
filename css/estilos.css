@@ -125,7 +125,7 @@ img {
     height: 100vh;
     min-height: 600px;
     background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
-                url('../imagenes/hero-horno.jpg') center/cover no-repeat;
+                url('../images/imagen-hero.jpg') center/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -624,7 +624,7 @@ img {
 
 .page-header {
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
-                url('../imagenes/hero-horno.jpg') center/cover no-repeat;
+                url('../images/imagen-hero.jpg') center/cover no-repeat;
     color: var(--color-blanco);
     text-align: center;
     padding: 100px 20px;
@@ -1292,7 +1292,7 @@ img[src*="imagenes"]::after {
 .pilares {
     padding: 90px 0;
     background: linear-gradient(rgba(0,0,0,0.72), rgba(0,0,0,0.72)),
-                url('../imagenes/hero-horno.jpg') center/cover no-repeat fixed;
+                url('../images/imagen-hero.jpg') center/cover no-repeat fixed;
     position: relative;
 }
 
@@ -1403,7 +1403,7 @@ img[src*="imagenes"]::after {
     right: 0;
     bottom: 0;
     background: linear-gradient(rgba(44,24,16,0.85), rgba(44,24,16,0.9)),
-                url('../imagenes/hero-horno.jpg') center/cover no-repeat;
+                url('../images/imagen-hero.jpg') center/cover no-repeat;
     z-index: 1;
 }
 
@@ -1531,5 +1531,122 @@ img[src*="imagenes"]::after {
     .reserva-info {
         flex-direction: column;
         gap: 15px;
+    }
+}
+
+/* ============================================
+   FASE 4: TESTIMONIOS (Estilo La Piazza)
+   ============================================ */
+
+.testimonios {
+    padding: 100px 0;
+    background: #F9F7F2; /* Fondo crema/beige claro */
+}
+
+.testimonios .section-title {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #2C1810;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.testimonios .section-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #C73E1D; /* Color terracota */
+    margin: 15px auto 0;
+}
+
+.testimonios-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.testimonio-card {
+    background: #ffffff;
+    padding: 40px 35px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0,0,0,0.04);
+    position: relative;
+}
+
+.testimonio-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 40px rgba(0,0,0,0.12);
+}
+
+.testimonio-estrellas {
+    color: #F4D03F; /* Dorado */
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+}
+
+.testimonio-texto {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 25px;
+    font-style: italic;
+    position: relative;
+    /* Sin comillas grandes, solo el texto */
+}
+
+.testimonio-autor {
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+    margin-top: auto;
+}
+
+.autor-nombre {
+    display: block;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    color: #2C1810;
+    font-size: 1.1rem;
+    margin-bottom: 4px;
+}
+
+.autor-verificado {
+    font-size: 0.85rem;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 0.75rem;
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+    .testimonios-grid {
+        grid-template-columns: 1fr;
+        max-width: 600px;
+        gap: 25px;
+    }
+    
+    .testimonios {
+        padding: 70px 20px;
+    }
+    
+    .testimonios .section-title {
+        font-size: 2rem;
+    }
+    
+    .testimonio-card {
+        padding: 30px 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .testimonio-texto {
+        font-size: 1rem;
     }
 }
