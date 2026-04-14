@@ -1650,3 +1650,57 @@ img[src*="imagenes"]::after {
         font-size: 1rem;
     }
 }
+
+/* ============================================
+   HERO SECTION - Imagen del horno arriba
+   ============================================ */
+
+.hero-section {
+    position: relative;
+    height: 60vh; /* Ocupa 60% de la pantalla */
+    min-height: 400px;
+    background: linear-gradient(rgba(44,24,16,0.6), rgba(44,24,16,0.7)),
+                url('images/imagen-hero.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 0; /* Justo debajo del nav */
+}
+
+.hero-content {
+    color: #ffffff;
+    z-index: 2;
+    padding: 20px;
+}
+
+.hero-content h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    letter-spacing: 3px;
+}
+
+.hero-content p {
+    font-size: 1.3rem;
+    opacity: 0.9;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Ajuste para móvil */
+@media (max-width: 768px) {
+    .hero-section {
+        height: 50vh;
+        min-height: 300px;
+    }
+    
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero-content p {
+        font-size: 1.1rem;
+    }
+}
