@@ -1384,3 +1384,152 @@ img[src*="imagenes"]::after {
     letter-spacing: 1px;
     opacity: 0.9;
 }
+
+/* ============================================
+   FASE 3: SECCIÓN RESERVA TU MESA
+   Estilo inspirado en La Piazza
+   ============================================ */
+
+.reserva-section {
+    position: relative;
+    padding: 100px 0;
+    overflow: hidden;
+}
+
+.reserva-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(rgba(44,24,16,0.85), rgba(44,24,16,0.9)),
+                url('../imagenes/hero-horno.jpg') center/cover no-repeat;
+    z-index: 1;
+}
+
+/* Si no tienes hero-horno.jpg, usa cualquier otra imagen del restaurante */
+/* Ejemplo alternativo: url('../imagenes/interior.jpg') */
+
+.reserva-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.reserva-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    color: #ffffff;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.reserva-subtitle {
+    color: rgba(255,255,255,0.8);
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+    font-weight: 300;
+}
+
+.reserva-botones {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.btn-reserva {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 18px 36px;
+    border-radius: 50px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-telefono {
+    background: #ffffff;
+    color: #2C1810;
+}
+
+.btn-telefono:hover {
+    background: #F4D03F;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.btn-whatsapp {
+    background: #25D366;
+    color: #ffffff;
+}
+
+.btn-whatsapp:hover {
+    background: #128C7E;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(37,211,102,0.3);
+}
+
+.reserva-info {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: rgba(255,255,255,0.7);
+    font-size: 0.95rem;
+    margin-top: 20px;
+}
+
+.reserva-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.reserva-item svg {
+    color: #F4D03F;
+    flex-shrink: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .reserva-section {
+        padding: 70px 20px;
+    }
+    
+    .reserva-title {
+        font-size: 2.2rem;
+    }
+    
+    .reserva-subtitle {
+        font-size: 1rem;
+    }
+    
+    .btn-reserva {
+        padding: 16px 28px;
+        font-size: 0.95rem;
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .reserva-botones {
+        flex-direction: column;
+        width: 100%;
+        max-width: 320px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .reserva-info {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
